@@ -30,6 +30,8 @@ public class Main {
             continua = scan.nextLine();
         } while (continua != "");
 
+        scan.close();
+        
         System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-");
         System.out.println("Livros cadastrados: ");
         for (Livro l : livros_arr) {
