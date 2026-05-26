@@ -1,7 +1,11 @@
 package com.microplasticos;
 
+import com.microplasticos.view.JogoDaVelhaView;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        JogoDaVelhaView jogo = new JogoDaVelhaView();
+
+        jogo.iniciaPartida();
     }
 }
