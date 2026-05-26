@@ -1,8 +1,8 @@
 package com.microplasticos.model;
 
 public class Jogador {
-    String nome;
-    Simbolo simbolo;
+    private String nome;
+    private Simbolo simbolo;
 
     public Jogador(String nome, Simbolo simbolo) {
         this.nome = nome;

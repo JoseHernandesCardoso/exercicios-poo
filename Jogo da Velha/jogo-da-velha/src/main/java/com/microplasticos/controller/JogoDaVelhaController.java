@@ -4,9 +4,9 @@ import com.microplasticos.model.*;
 import com.microplasticos.exception.JogadaInvalidaException;
 
 public class JogoDaVelhaController {
-    Tabuleiro tabuleiro;
-    Jogador jogador1, jogador2, jogadorAtual;
-    StatusPartida status;
+    private Tabuleiro tabuleiro;
+    private Jogador jogador1, jogador2, jogadorAtual;
+    private StatusPartida status;
 
     public JogoDaVelhaController(String nome1, String nome2) {
         tabuleiro = new Tabuleiro();

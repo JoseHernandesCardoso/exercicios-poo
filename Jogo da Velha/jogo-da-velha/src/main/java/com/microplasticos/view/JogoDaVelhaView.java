@@ -7,8 +7,8 @@ import com.microplasticos.exception.JogadaInvalidaException;
 import com.microplasticos.model.StatusPartida;
 
 public class JogoDaVelhaView {
-    JogoDaVelhaController controller;
-    Scanner scan;
+    private JogoDaVelhaController controller;
+    private Scanner scan;
 
     public JogoDaVelhaView() {
         scan = new Scanner(System.in);

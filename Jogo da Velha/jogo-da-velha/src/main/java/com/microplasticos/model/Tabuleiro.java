@@ -3,7 +3,7 @@ package com.microplasticos.model;
 import com.microplasticos.exception.JogadaInvalidaException;
 
 public class Tabuleiro {
-    Simbolo[][] tabuleiro;
+    private Simbolo[][] tabuleiro;
     
     public Tabuleiro() {
         this.tabuleiro = new Simbolo[3][3];
