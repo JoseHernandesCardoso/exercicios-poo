@@ -1,5 +1,6 @@
 package com.example.crudproject.service;
 
+import com.example.crudproject.exception.ValidacaoException;
 import com.example.crudproject.model.Produto;
 import com.example.crudproject.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,7 @@ public class ProdutoService {
             return productRepository.save(product);
         }
         else{
-            throw new RuntimeException("Preco invalido, menor que 0");
+            throw new ValidacaoException("Preco invalido, menor que 0");
         }
     }
 

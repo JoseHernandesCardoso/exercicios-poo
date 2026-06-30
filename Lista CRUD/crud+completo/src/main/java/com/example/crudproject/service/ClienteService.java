@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.crudproject.exception.ValidacaoException;
 import com.example.crudproject.model.Cliente;
 import com.example.crudproject.repository.ClienteRepository;
 
@@ -20,7 +21,7 @@ public class ClienteService {
             return clienteRepository.save(cliente);
         }
         else{
-            throw new RuntimeException("Cliente Invalido");
+            throw new ValidacaoException("Cliente Invalido");
         }
     }
 

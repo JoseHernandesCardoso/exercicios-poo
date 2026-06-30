@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -34,8 +36,9 @@ public class ClienteController {
     }
 
     @PostMapping
-    public Cliente createCliente(@RequestBody Cliente cliente){
-        return clienteService.save(cliente);
+    public ResponseEntity<Cliente> createCliente(@RequestBody Cliente cliente){
+        Cliente clientee = clienteService.save(cliente);
+        return ResponseEntity.status(HttpStatus.CREATED).body(clientee);
     }
 
     @PutMapping("/{id}")
