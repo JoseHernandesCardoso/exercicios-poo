@@ -1,0 +1,26 @@
+info:
+  name: Jogar
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:8080/partidas/1/jogar?linha=1&coluna=0&nomeJogador=José
+  params:
+    - name: linha
+      value: "1"
+      type: query
+    - name: coluna
+      value: "0"
+      type: query
+    - name: nomeJogador
+      value: José
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​

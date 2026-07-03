@@ -1,0 +1,15 @@
+info:
+  name: ApagarPartida
+  type: http
+
+http:
+  method: DELETE
+  url: http://localhost:8080/partidas/1/apagar
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​

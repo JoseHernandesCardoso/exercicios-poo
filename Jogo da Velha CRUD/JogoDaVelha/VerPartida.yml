@@ -1,0 +1,14 @@
+info:
+  name: VerPartida
+  type: http
+
+http:
+  method: GET
+  url: http://localhost:8080/partidas/1
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: CriaPartida
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/partidas?nomeJogadorX=José&nomeJogadorO=Nakamura
+  params:
+    - name: nomeJogadorX
+      value: José
+      type: query
+    - name: nomeJogadorO
+      value: Nakamura
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
